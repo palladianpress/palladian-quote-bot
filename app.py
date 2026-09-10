@@ -214,7 +214,7 @@ if total_qty > 0:
         <p style="margin: 0; font-size: 14px;">
             Click the button above to proceed via e-mail, or send this quote to 
             <strong>palladianpressncl@gmail.com</strong> to proceed. We will reply to 
-            your quote with all the colours for your desing currently in stock and any 
+            your quote with all the colours for your design currently in stock and any 
             you may wish to request. if you have any other questions or enquiries don't
             hesitate to reach out! :-)
         </p>
