@@ -91,7 +91,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # --- HEADER SECTION ---
-st.title("PALLADIAN PRINT STUDIO")
+st.title("PALLADIAN PRESS")
 st.caption("Instant Quote Generator — Single-Colour Screen Printed T-Shirts")
 
 st.divider()
