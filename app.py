@@ -100,8 +100,8 @@ st.divider()
 st.subheader("1. Select Garments")
 
 color_option = st.radio(
-    "What garment color(s) do you need?",
-    ["All White Tees", "All Colour Tees", "Mix of White & Colour Tees"]
+    "What garment colour(s) do you need?",
+    ["All White Tees", "All Colour Tees (Incuding Black)", "Mix of White & Colour Tees (Including Black)"]
 )
 
 qty_white = 0
