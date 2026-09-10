@@ -3,7 +3,7 @@ import urllib.parse
 
 # --- PAGE CONFIGURATION ---
 st.set_page_config(
-    page_title="Palladian Print Studio | Instant Quote",
+    page_title="Palladian Press | Instant Quote",
     page_icon="👕",
     layout="centered"
 )
@@ -92,7 +92,7 @@ st.markdown("""
 
 # --- HEADER SECTION ---
 st.title("PALLADIAN PRINT STUDIO")
-st.caption("Instant Quote Generator — Single-Color Screen Printed T-Shirts")
+st.caption("Instant Quote Generator — Single-Colour Screen Printed T-Shirts")
 
 st.divider()
 
@@ -101,7 +101,7 @@ st.subheader("1. Select Garments")
 
 color_option = st.radio(
     "What garment color(s) do you need?",
-    ["All White Tees", "All Color Tees", "Mix of White & Color Tees"]
+    ["All White Tees", "All Colour Tees", "Mix of White & Colour Tees"]
 )
 
 qty_white = 0
@@ -110,13 +110,13 @@ qty_color = 0
 if color_option == "All White Tees":
     qty_white = st.number_input("How many White t-shirts?", min_value=1, value=10, step=1)
 elif color_option == "All Color Tees":
-    qty_color = st.number_input("How many Color t-shirts?", min_value=1, value=10, step=1)
+    qty_color = st.number_input("How many Colour t-shirts?", min_value=1, value=10, step=1)
 else:
     col1, col2 = st.columns(2)
     with col1:
         qty_white = st.number_input("White t-shirts", min_value=0, value=5, step=1)
     with col2:
-        qty_color = st.number_input("Color t-shirts", min_value=0, value=5, step=1)
+        qty_color = st.number_input("Colour t-shirts", min_value=0, value=5, step=1)
 
 total_qty = qty_white + qty_color
 
@@ -169,16 +169,16 @@ if total_qty > 0:
 
     garment_summary = ""
     if qty_white > 0 and qty_color > 0:
-        garment_summary = f"{qty_white} x White, {qty_color} x Color"
+        garment_summary = f"{qty_white} x White, {qty_color} x Colour"
     elif qty_white > 0:
         garment_summary = f"{qty_white} x White"
     else:
-        garment_summary = f"{qty_color} x Color"
+        garment_summary = f"{qty_color} x Colour"
 
     st.markdown(f"""
     <div class="quote-box">
         <p><strong>Item Spec:</strong> Gildan Heavyweight Cotton T-Shirt</p>
-        <p><strong>Print Style:</strong> 1-Color Hand-Pulled Screen Print</p>
+        <p><strong>Print Style:</strong> 1-Colour Hand-Pulled Screen Print</p>
         <p><strong>Total Order Size:</strong> {total_qty} t-shirts ({garment_summary})</p>
         <p><strong>Applied Tier:</strong> {tier_name}</p>
         <p><strong>Artwork Service:</strong> {art_label}</p>
